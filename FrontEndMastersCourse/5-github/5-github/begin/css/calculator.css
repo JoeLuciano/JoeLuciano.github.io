@@ -1,3 +1,12 @@
+/* ========== GLOBAL SCOPE ========== */
+:root {
+    --light-grey: #d8d9db;
+    --buttons-hover: #ebebeb;
+    --button-active-state: #bbbcbe;
+    --function-buttons: #df974c;
+    --function-buttons-hover: #dfb07e;
+    --function-buttons-active: #dd8d37;
+}
 html {
     box-sizing: border-box;
 }
@@ -7,7 +16,135 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: lightcyan;
 }
 .wrapper {
+    margin: 2rem auto;
     width: 400px;
+    background-color: aqua;
+    font-size: 2rem;
 }
+/* ========== END GLOBAL SCOPE ========== */
+
+/* ========== CALCULATOR SCOPE ========== */
+.screen {
+    background-color: black;
+    outline-width: 2px;
+    outline-color: black;
+    outline-style: solid;
+    color: white;
+    padding: 1rem .4rem;
+    margin: 0;
+    text-align: right;
+}
+
+.calc-buttons {
+    display: flex;
+    flex-direction: column;
+}
+/* ========== TOP ROW ========== */
+.calc-buttons .calc-buttons-top {
+    display: flex;
+    flex-direction: row;
+}
+.calc-buttons .calc-buttons-top .clear-button {
+    flex-basis: 50%;
+}
+.calc-buttons .calc-buttons-top .back-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-top .divide-button {
+    flex-basis: 25%;
+}
+/* ========== MIDDLE-TOP ROW ========== */
+.calc-buttons .calc-buttons-middle-top {
+    display: flex;
+    flex-direction: row;
+}
+.calc-buttons .calc-buttons-middle-top .seven-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle-top .eight-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle-top .nine-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle-top .multiply-button {
+    flex-basis: 25%;
+}
+/* ========== MIDDLE ROW ========== */
+.calc-buttons .calc-buttons-middle {
+    display: flex;
+    flex-direction: row;
+}
+.calc-buttons .calc-buttons-middle .four-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle .five-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle .six-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle .minus-button {
+    flex-basis: 25%;
+}
+/* ========== MIDDLE-BOTTOM ROW ========== */
+.calc-buttons .calc-buttons-middle-bottom {
+    display: flex;
+    flex-direction: row;
+}
+.calc-buttons .calc-buttons-middle-bottom .one-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle-bottom .two-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle-bottom .three-button {
+    flex-basis: 25%;
+}
+.calc-buttons .calc-buttons-middle-bottom .plus-button {
+    flex-basis: 25%;
+}
+/* ========== BOTTOM ROW ========== */
+.calc-buttons .calc-buttons-bottom {
+    display: flex;
+    flex-direction: row;
+}
+.calc-buttons .calc-buttons-bottom .zero-button {
+    flex-basis: 75%;
+}
+.calc-buttons .calc-buttons-bottom .equal-button {
+    flex-basis: 25%;
+}
+/* ========== END CALCULATOR SCOPE ========== */
+
+/* ========== BUTTON MODIFICATIONS ========== */
+button {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    border: none;
+    outline-width: .1rem;
+    outline-color: black;
+    outline-style: solid;
+}
+button:hover {
+    background-color: var(--buttons-hover);
+}
+button:active {
+    background-color: var(--button-active-state);
+}
+
+.function-buttons {
+    color: white;
+    background-color: var(--function-buttons);
+}
+.function-buttons:hover {
+    background-color: var(--function-buttons-hover);
+}
+.function-buttons:active {
+    background-color: var(--function-buttons-active);
+}
+/* ========== END BUTTON MODIFICATIONS ========== */

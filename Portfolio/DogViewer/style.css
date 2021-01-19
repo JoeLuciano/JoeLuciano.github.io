@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  background-color: #8E837E;
+  font: 1.2rem Arial, sans-serif;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background-color: #7EA8C4;
+  box-shadow: 0 0 5px 10px #7EA8C4
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  font: 3rem Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+
+#summary {
+  font: 1.8rem Arial, sans-serif;
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+}
+
+#img-div {
+  background-color: #D8D7C5;
+  width: 90%;
+  margin: 3rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px 10px #D8D7C5;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5rem;
+}
+#image {
+  position: relative;
+  max-width: 80vw;
+  max-height: 600px;
+  border-radius: 5%;
+}
+@keyframes spin {
+  to {
+      transform: rotateZ(360deg);
+  }
+}
+.spinner {
+  font-size: 50px;
+  text-align: center;
+  animation: 1.5s spin linear infinite;
+  display: block;
+  margin: 10rem;
+}
+.no-show {
+  display: none;
+}
+
+#img-caption {
+  padding: .5rem;
+}
+#img-caption button {
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  background-color: #645454;
+  padding: .5rem 1rem;
+  margin: .5rem;
+  color: #F8F7F5;
+  text-shadow: .5px .5px #AAAAAA;
+}
+#img-caption button:hover {
+  background-color: #F8F7F5;
+  color: #645454;
+}
+
+#dog-dropdown {
+  font-size: 1.2rem;
+  background-color: #7EA8C4;
+  padding: .4rem .5rem;
+}
+
+#tribute-info {
+  width: 90%;
+  padding: 1rem;
+}
+#tribute-link {
+  text-decoration: none;
+}
+#tribute-link:hover {
+  color: antiquewhite;
+}
+
+#dog-grid {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 10rem);
+  grid-gap: 1rem;
+}
+#dog-grid button {
+  height: 1.8rem;
+  padding: .2rem;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid #645454;
+  background-color: #A98B71;
+}
+#dog-grid button:hover {
+  background-color: #FFFBF1;
+  font-size: .9rem;
+}

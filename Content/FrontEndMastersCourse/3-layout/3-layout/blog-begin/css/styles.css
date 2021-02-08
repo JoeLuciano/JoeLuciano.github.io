@@ -1,0 +1,124 @@
+/* ------- GENERAL ------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kavivanar', cursive;
+    font-weight: normal;
+}
+h2 {
+    font-size: 2rem;
+    color: #A51F10;
+    margin: 0;
+}
+a {
+    color: #DA0090;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ------- HEADER SECTION ------- */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-right: 15rem;
+}
+.leftheader {
+    margin-right: 1rem;
+}
+.rightheader {
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.rightheader h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #DA028F;
+}
+.rightheader p {
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ------- NAV BAR SECTION ------- */
+nav {
+    border-top: .1rem solid #DA028F;
+    border-bottom: .1rem solid #73352E;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    text-emphasis: bold;
+    color: #73352E;
+    white-space: nowrap;
+    display: block;
+      padding: 0.5rem 1rem 0.5rem 1rem;
+}
+nav a:hover {
+    color: #5ec708;
+    background-color: black;
+}
+
+/* ------- SECTION & ARTICLE SECTION ------- */
+section {
+    margin: 1.5rem 0rem 0.2rem 0rem;
+    border-bottom: .1rem solid #DA028F;
+}
+section article {
+    margin: 2rem 0rem 4rem 0rem;
+}
+section article img {
+    float: left;
+    clear: both;
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+}
+section article:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.posted {
+    font-size: 0.8rem;
+    color: #89A611;
+}
+
+/* ------- FOOTER SECTION ------- */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: .1rem solid #73352E;
+    margin-bottom: 4rem;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+footer li {
+    display: inline-block;
+}

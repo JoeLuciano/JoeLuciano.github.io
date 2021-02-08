@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  max-width: 720px;
+  background-image: linear-gradient( 115deg, rgba(14, 14, 230, 0.8),
+                  rgba(28, 215, 221, 0.8) ),
+                    url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0);
+}
+
+#title {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4)
+}
+#description {
+  font-size: 1.1rem;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+form {
+  background-color: #163cafea;
+  color: white;
+  font-size: 1.4rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: left;
+}
+form label {
+  margin-bottom: 1rem;
+}
+form select {
+  padding: .3rem .5rem;
+  box-shadow: 0 0 3px rgba(28, 215, 221, 0.8);
+}
+#email, #name {
+  width: 90%;
+  padding: .3rem .5rem;
+  box-shadow: 0 0 3px rgba(28, 215, 221, 0.8);
+}
+#number, #current-role {
+  width: 60px;
+  padding: .3rem .5rem;
+  box-shadow: 0 0 3px rgba(28, 215, 221, 0.8);
+}
+
+#experience {
+  margin-bottom: 1rem;
+}
+
+#role-rating {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15%);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.radio-button {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#interest-title {
+  margin-bottom: 1rem;
+}
+#interests {
+  margin-bottom: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50%);
+}
+
+#submit {
+  padding: 1rem;
+}

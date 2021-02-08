@@ -1,0 +1,114 @@
+:root {
+    --temp-color:#F2DEC4;
+    --shadow-color:  #123340;
+    --outline-color: #194D59;
+    --foreground-color: #8C815E;
+    --background-color:#6894A6;
+}
+
+body {
+    margin-top: 1rem;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    color: var(--shadow-color);
+    font: 2rem Roboto;
+}
+div {
+    background-color: var(--foreground-color);
+    width: 80%;
+    height: calc(80vw * .6);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    outline-color: var(--foreground-color);
+    outline-width: 1px;
+    outline-style: solid;
+    animation-name: unhighlightbox;
+    animation-duration: 500ms;
+    box-shadow: 0px 0px 30px 5px var(--shadow-color);
+}
+div:hover {
+    outline-color: var(--outline-color);
+    outline-width: 1px;
+    outline-style: solid;
+    animation-name: highlightbox;
+    animation-duration: 500ms;
+}
+@keyframes highlightbox {
+    0% {
+        outline-color: var(--foreground-color);
+    }
+    100% {
+        outline-color: var(--outline-color);
+    }
+}
+@keyframes unhighlightbox {
+    0% {
+        outline-color: var(--outline-color);
+    }
+    100% {
+        outline-color: var(--foreground-color);
+    }
+}
+
+div section {
+    margin: auto;
+    text-align: center;
+}
+div div {
+    background-color: var(--foreground-color);;
+    height: 100%;
+    width: 38.46%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    box-shadow: none;
+}
+div div div {
+    background-color: var(--foreground-color);;
+    height: 38.46%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div div div div {
+    background-color: var(--foreground-color);;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div div div div div {
+    background-color: var(--foreground-color);;
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+div div div div div div {
+    background-color: var(--foreground-color);;
+    height: 100%;
+    width: 50%;
+}
+
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Aligner-item {
+    max-width: 50%;
+  }
+  
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
+  
+  .Aligner-item--bottom {
+    align-self: flex-end;
+  }

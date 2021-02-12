@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
@@ -11,7 +11,7 @@ import SignUp from './components/pages/SignUp';
 function App() {
   return (
     <>
-      <Router basename={process.env.PUBLIC_URL}>
+      <HashRouter basename='/'>
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
@@ -19,7 +19,7 @@ function App() {
           <Route path='/products' component={Products} />
           <Route path='/sign-up' component={SignUp} />
         </Switch>
-      </Router>
+      </HashRouter>
     </>
   );
 }
